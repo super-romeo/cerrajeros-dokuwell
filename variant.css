@@ -5,7 +5,11 @@
 
 :root{
   --bg:#fcfcfc; --ink:#05080b; --muted:#5c646f; --line:#dfe1e5; --card:#ffffff;
-  --alt:#f7f8f9; --accent:#006acf; --accent-soft:#d6efff; --navy:#0b223e;
+  --alt:#f7f8f9; --accent:#006acf; --accent-soft:#d6efff; --accent-num:#b1ddff; --navy:#05080b;
+  --focus:#0086dd; --accent-press:#006acf;
+  --warn:#9a6700; --warn-soft:rgba(154,103,0,.14);
+  --shadow:rgba(5,8,11,.18);
+  --font:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   --radius:12px; --radius-lg:21.6px;
   /* Emil's curves: strong ease-out for UI, iOS drawer curve for the bottom bar */
   --ease-out:cubic-bezier(0.23, 1, 0.32, 1);
@@ -16,10 +20,10 @@
 
 /* ---------- platform layer (mobile-native) ---------- */
 html{-webkit-tap-highlight-color:transparent;-webkit-text-size-adjust:100%}
-body{font-size:16px;line-height:24px;overflow-x:clip}
+body{font-size:16px;line-height:24px;overflow-x:clip;background:var(--bg);color:var(--ink);font-family:var(--font)}
 a,select,label{touch-action:manipulation}
 a.cta,.btn,nav.top a,.logo a{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
-:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:999px}
+:focus-visible{outline:2px solid var(--focus);outline-offset:3px;border-radius:999px}
 
 /* ---------- type (restated so the page holds without the remote base) ---------- */
 h1{font-size:56px;line-height:1.1;letter-spacing:-1.4px;font-weight:700;text-wrap:balance;max-width:18ch}
@@ -31,7 +35,7 @@ h3{font-size:20px;line-height:28px;letter-spacing:-.4px;font-weight:700}
 /* ---------- hero ---------- */
 .hero{padding:72px 0 40px}
 .hero .cta-note{display:flex;align-items:center;gap:8px}
-.hero .cta-note::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:#e3a008;box-shadow:0 0 0 4px #fdf0cf}
+.hero .cta-note::before{content:"";flex:none;width:8px;height:8px;border-radius:50%;background:var(--warn);box-shadow:0 0 0 4px var(--warn-soft)}
 
 /* "aviso -> parte -> factura" strip: explains the product in one glance */
 .flow{list-style:none;margin:40px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px;max-width:640px}
@@ -43,22 +47,22 @@ h3{font-size:20px;line-height:28px;letter-spacing:-.4px;font-weight:700}
 a.cta,.btn{
   transition:transform var(--press) var(--ease-out),opacity 150ms ease,background-color 150ms ease,box-shadow 150ms ease;
 }
-a.cta{color:#fff;background:var(--accent);font-size:16px;line-height:24px;font-weight:600;min-height:56px}
-.btn{color:var(--ink);background:#fff;font-size:14px;line-height:20px;min-height:44px;display:inline-flex;align-items:center}
-a.cta:hover,a.cta:active{color:#fff}
+a.cta{color:#ffffff;background:var(--accent);font-size:16px;line-height:24px;font-weight:600;min-height:56px}
+.btn{color:var(--ink);background:var(--card);font-size:14px;line-height:20px;min-height:44px;display:inline-flex;align-items:center}
+a.cta:hover,a.cta:active{color:#ffffff}
 .btn:hover,.btn:active{color:var(--ink)}
 a.cta:active,.btn:active{transform:scale(.97)}
-a.cta:active{background:#005bb3}
+a.cta:active{background:var(--accent-press)}
 .btn:active{background:var(--alt)}
 @media not all and (hover:hover) and (pointer:fine){
   a.cta:hover{opacity:1}
-  .btn:hover{background:#fff}
+  .btn:hover{background:var(--card)}
   .btn:active{background:var(--alt)}
 }
 @media (hover:hover) and (pointer:fine){
-  a.cta:hover{opacity:1;background:#005bb3;box-shadow:0 6px 20px -6px rgba(0,106,207,.55)}
+  a.cta:hover{opacity:.9;background:var(--accent-press);box-shadow:0 6px 20px -6px var(--shadow)}
   .card{transition:border-color 150ms ease,box-shadow 150ms ease}
-  .card:hover{border-color:#c3c8cf;box-shadow:0 10px 30px -18px rgba(11,34,62,.35)}
+  .card:hover{border-color:var(--line);box-shadow:0 10px 30px -18px var(--shadow)}
 }
 
 /* ---------- features ---------- */
@@ -73,10 +77,10 @@ a.cta:active{background:#005bb3}
 
 /* ---------- example: a card that reads like a job log ---------- */
 .story{background:var(--card);border:1px solid var(--line);border-radius:var(--radius-lg);padding:28px 32px;margin:0 0 28px;max-width:720px}
-.story p{margin:0;font-size:18px;line-height:28px;color:#2a3139;text-wrap:pretty}
+.story p{margin:0;font-size:18px;line-height:28px;color:var(--ink);text-wrap:pretty}
 
 /* ---------- SEO text: comfortable measure ---------- */
-#opis p{max-width:68ch;font-size:17px;line-height:28px;color:#2a3139;margin:0 0 18px}
+#opis p{max-width:68ch;font-size:17px;line-height:28px;color:var(--ink);margin:0 0 18px}
 #opis p:first-of-type{font-size:20px;line-height:32px;color:var(--ink)}
 
 /* ---------- FAQ as quiet cards ---------- */
@@ -92,8 +96,10 @@ a.cta:active{background:#005bb3}
 .panel a.cta{margin:0}
 
 /* ---------- footer: real tap targets ---------- */
-footer{font-size:14px;line-height:20px}
-footer a{display:inline-flex;align-items:center;min-height:44px}
+nav.top a{color:var(--muted)}
+footer{font-size:14px;line-height:20px;background:var(--alt);color:var(--ink);border-top:1px solid var(--line)}
+footer a{display:inline-flex;align-items:center;min-height:44px;color:var(--accent)}
+footer .muted{color:var(--muted)}
 footer p{margin:0}
 
 /* ---------- phones ---------- */
@@ -116,7 +122,7 @@ footer p{margin:0}
   /* The existing hero CTA (same element, same data-ev) becomes a bottom bar in thumb reach. */
   .hero a.cta{
     position:fixed;z-index:25;left:16px;right:16px;bottom:calc(12px + var(--safe-b));
-    margin:0;box-shadow:0 10px 28px -8px rgba(0,106,207,.6),0 0 0 4px rgba(252,252,252,.9);
+    margin:0;box-shadow:0 10px 28px -8px var(--shadow),0 0 0 4px rgba(252,252,252,.9);
   }
   .hero .cta-note{margin-top:20px}
   footer{padding-bottom:calc(28px + 84px + var(--safe-b))}
