@@ -15,6 +15,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="description" content="Para cerrajeros autónomos: el aviso como parte a pie de puerta, con material y firma del cliente, y del parte sale la factura sin reescribir.">
 <link rel="icon" href="favicon.svg">
 <link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="variant.css">
 <script src="smoke.js" defer></script>
 <!-- faq-jsonld:start -->
 <script type="application/ld+json">
@@ -73,38 +77,68 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
 
-<header><div class="wrap">
-  <div class="logo"><a href="index.html" data-ev="click_logo_home">Parte Cerrajero</a></div>
-  <nav class="top"><a href="#que" data-ev="click_nav_que">Qué obtienes</a><a href="price.html" data-ev="click_nav_precio">Precio</a><a href="#ejemplo" data-ev="click_nav_ejemplo">Ejemplo</a><a href="#start" data-ev="click_nav_start">Empezar</a></nav>
+<header><div class="shell">
+  <a class="home" href="index.html" data-ev="click_logo_home">Parte Cerrajero</a>
+  <nav><a href="#que" data-ev="click_nav_que">Qué obtienes</a><a href="price.html" data-ev="click_nav_precio">Precio</a><a href="#ejemplo" data-ev="click_nav_ejemplo">Ejemplo</a><a href="#start" data-ev="click_nav_start">Empezar</a></nav>
 </div></header>
 
-<div class="wrap">
-  <div class="hero">
-    <h1>Del parte firmado a la factura — sin papeles en la furgoneta ni noches de oficina</h1>
-    <p class="sub">Para cerrajeros autónomos y pequeñas empresas de cerrajería: el aviso se anota como parte en el móvil, a pie de puerta, con el material usado, las fotos y la firma del cliente, y del parte sale la factura en el momento.</p>
-    <a class="cta" href="price.html" data-ev="cta_click">Lo necesito</a>
-    <p class="cta-note">Servicio en preparación · En esta página no se acepta ningún pago</p>
-  </div>
+<main class="shell">
+  <section class="split">
+    <div class="stack">
+      <p class="meta rise"><span class="dot"></span> Para cerrajeros autónomos en España</p>
+      <h1 class="rise" style="--i:1" data-len="long">Del parte firmado a la factura&nbsp;<span class="soft">— sin papeles en la furgoneta ni noches de oficina</span></h1>
+      <p class="rise" style="--i:2">Para cerrajeros autónomos y pequeñas empresas de cerrajería: el aviso se anota como parte en el móvil, a pie de puerta, con el material usado, las fotos y la firma del cliente, y del parte sale la factura en el momento.</p>
+      <a class="button rise" style="--i:3" href="price.html" data-ev="cta_click">Lo necesito</a>
+      <p class="meta rise" style="--i:4">Servicio en preparación · En esta página no se acepta ningún pago</p>
+    </div>
+    <figure class="window rise" style="--i:2"><svg aria-hidden="true" focusable="false" class="shot" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><rect x="80" y="80" width="1040" height="640" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="130" y="158" font-size="40" fill="#0a1524" font-weight="600">Parte Cerrajero</text><line x1="110" y1="200" x2="1090" y2="200" stroke="#dde2ea" stroke-width="3" fill="none" /><rect x="130" y="248" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="196" y="280" font-size="32" fill="#0a1524">en el móvil</text><rect x="130" y="360" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="196" y="392" font-size="32" fill="#0a1524">firma del cliente</text><rect x="130" y="472" width="44" height="44" rx="8" fill="#dfe8f7" /><text x="196" y="504" font-size="32" fill="#0a1524">la factura</text><rect x="130" y="584" width="44" height="44" rx="8" fill="#12397a" /><rect x="196" y="596" width="280" height="20" rx="10" fill="#dde2ea" /><rect x="700" y="248" width="370" height="420" rx="20" fill="#dfe8f7" /><text x="730" y="310" font-size="34" fill="#0a1524" font-weight="600">Historial</text><rect x="740" y="510" width="48" height="110" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="830" y="430" width="48" height="190" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /><rect x="920" y="470" width="48" height="150" rx="8" fill="#12397a" stroke="#dde2ea" stroke-width="2" /><rect x="1010" y="390" width="48" height="230" rx="8" fill="#ffffff" stroke="#dde2ea" stroke-width="2" /></svg></figure>
+    <dl class="facts">
+      <div><dt>Para</dt><dd>Cerrajeros autónomos y pequeñas</dd></div>
+      <div><dt>Parte</dt><dd>Anota como parte en</dd></div>
+      <div><dt>Cómo</dt><dd>Sin instalar nada</dd></div>
+      <div><dt>Aún</dt><dd>Está en preparación</dd></div>
+    </dl>
+  </section>
 
   <section id="que" data-view="features_view">
-    <h2>Qué obtienes</h2>
-    <div class="grid">
-      <div class="card"><b>Parte de trabajo</b><span>El aviso con dirección, trabajo hecho, horas y material, en el móvil.</span><br><a class="btn" href="price.html" data-ev="feature_parte">Lo necesito</a></div>
-      <div class="card"><b>Firma del cliente</b><span>El cliente firma el parte en la pantalla al terminar el servicio.</span><br><a class="btn" href="price.html" data-ev="feature_firma">Lo necesito</a></div>
-      <div class="card"><b>Factura desde el parte</b><span>La factura se genera del parte firmado, sin volver a teclear nada.</span><br><a class="btn" href="price.html" data-ev="feature_factura">Lo necesito</a></div>
-      <div class="card"><b>Historial por cliente</b><span>Todos los partes y facturas de cada cliente y dirección, con sus fotos.</span><br><a class="btn" href="price.html" data-ev="feature_historial">Lo necesito</a></div>
+    <div class="stack"><h2>Qué obtienes</h2></div>
+    <div class="bento">
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="60" width="660" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="110" y="130" font-size="36" fill="#0a1524" font-weight="600">Parte de trabajo</text><text x="110" y="180" font-size="30" fill="#566174">en el móvil</text><rect x="110" y="230" width="40" height="40" rx="8" fill="#12397a" /><rect x="170" y="238" width="420" height="24" rx="12" fill="#dde2ea" /><polyline points="118,252 128,262 142,242" fill="none" stroke="#ffffff" stroke-width="4" /><rect x="110" y="320" width="40" height="40" rx="8" fill="#dfe8f7" /><rect x="170" y="328" width="350" height="24" rx="12" fill="#dde2ea" /><polyline points="118,342 128,352 142,332" fill="none" stroke="#12397a" stroke-width="4" /><rect x="110" y="410" width="40" height="40" rx="8" fill="#dfe8f7" /><rect x="170" y="418" width="280" height="24" rx="12" fill="#dde2ea" /></svg></div>
+        <h3>Parte de trabajo</h3><p>El aviso con dirección, trabajo hecho, horas y material, en el móvil.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_parte">Lo necesito</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="60" width="660" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="110" y="130" font-size="36" fill="#0a1524" font-weight="600">Firma del cliente</text><rect x="110" y="170" width="420" height="320" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="150" y="210" width="280" height="22" rx="8" fill="#b9c3d2" /><rect x="150" y="260" width="330" height="18" rx="8" fill="#dde2ea" /><rect x="150" y="300" width="250" height="18" rx="8" fill="#dde2ea" /><rect x="150" y="340" width="300" height="18" rx="8" fill="#dde2ea" /><circle cx="560" cy="250" r="70" fill="#dfe8f7" /><polyline points="528,250 550,274 598,220" fill="none" stroke="#12397a" stroke-width="8" /><text x="150" y="450" font-size="30" fill="#566174">en la pantalla</text></svg></div>
+        <h3>Firma del cliente</h3><p>El cliente firma el parte en la pantalla al terminar el servicio.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_firma">Lo necesito</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="60" width="660" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="100" y="150" width="230" height="300" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="470" y="150" width="230" height="300" rx="16" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><rect x="130" y="200" width="160" height="16" rx="8" fill="#dde2ea" /><rect x="130" y="236" width="120" height="16" rx="8" fill="#dde2ea" /><rect x="500" y="200" width="160" height="16" rx="8" fill="#b9c3d2" /><rect x="500" y="236" width="140" height="16" rx="8" fill="#dde2ea" /><polygon points="350,290 410,290 410,274 450,306 410,338 410,322 350,322" fill="#12397a" /><text x="120" y="120" font-size="32" fill="#0a1524" font-weight="600">Factura desde el parte</text><text x="120" y="500" font-size="30" fill="#566174">sin volver a teclear</text></svg></div>
+        <h3>Factura desde el parte</h3><p>La factura se genera del parte firmado, sin volver a teclear nada.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_factura">Lo necesito</a>
+      </article>
+      <article class="tile stack reveal">
+        <div class="art"><svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600"><rect width="800" height="600" fill="#eef2f7" /><rect x="70" y="60" width="660" height="480" rx="22" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="110" y="130" font-size="36" fill="#0a1524" font-weight="600">Historial por cliente</text><rect x="180" y="200" width="460" height="28" rx="8" fill="#dde2ea" /><rect x="110" y="200" width="36" height="36" rx="6" fill="#dfe8f7" /><rect x="180" y="300" width="420" height="28" rx="8" fill="#dde2ea" /><polygon points="110,300 150,300 150,336 130,324 110,336" fill="#12397a" /><rect x="180" y="400" width="380" height="28" rx="8" fill="#dde2ea" /><rect x="110" y="400" width="36" height="36" rx="6" fill="#dfe8f7" /><text x="110" y="500" font-size="30" fill="#566174">con sus fotos</text></svg></div>
+        <h3>Historial por cliente</h3><p>Todos los partes y facturas de cada cliente y dirección, con sus fotos.</p>
+        <a class="button quiet" href="price.html" data-ev="feature_historial">Lo necesito</a>
+      </article>
     </div>
   </section>
 
-  <section id="ejemplo" data-view="example_view">
-    <h2>Ejemplo (datos ficticios)</h2>
-    <p class="fine">Cerrajero autónomo en Valencia, 6 avisos al día. A las 22:40, una apertura de puerta: anota el aviso, añade el cilindro cambiado y dos fotos, el cliente firma en el móvil y la factura le llega por correo antes de que el cerrajero vuelva a la furgoneta.</p>
-    <a class="cta" href="price.html" data-ev="click_cta_after_example">Elegir plan</a>
+  <section id="ejemplo" data-view="example_view" class="split flip">
+    <div class="stack">
+      <h2>Ejemplo</h2>
+      <p>Cerrajero autónomo en Valencia, 6 avisos al día. A las 22:40, una apertura de puerta: anota el aviso, añade el cilindro cambiado y dos fotos, el cliente firma en el móvil y la factura le llega por correo antes de que el cerrajero vuelva a la furgoneta.</p>
+    <a class="button" href="price.html" data-ev="click_cta_after_example">Elegir plan</a>
+    </div>
+<svg aria-hidden="true" focusable="false" class="shot reveal" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800"><rect width="1200" height="800" fill="#eef2f7" /><line x1="240" y1="150" x2="960" y2="150" stroke="#dde2ea" stroke-width="6" fill="none" /><circle cx="240" cy="150" r="20" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="240" y="230" font-size="34" fill="#0a1524" font-weight="600" text-anchor="middle">Aviso</text><circle cx="600" cy="150" r="20" fill="#ffffff" stroke="#12397a" stroke-width="6" /><text x="600" y="230" font-size="34" fill="#0a1524" font-weight="600" text-anchor="middle">Firma</text><circle cx="960" cy="150" r="20" fill="#12397a" stroke="#12397a" stroke-width="6" /><text x="960" y="230" font-size="34" fill="#0a1524" font-weight="600" text-anchor="middle">Factura</text><rect x="120" y="300" width="960" height="420" rx="24" fill="#ffffff" stroke="#dde2ea" stroke-width="3" /><text x="170" y="390" font-size="38" fill="#0a1524" font-weight="600">por correo</text><rect x="170" y="450" width="64" height="64" rx="12" fill="#dfe8f7" /><rect x="260" y="450" width="64" height="64" rx="12" fill="#12397a" /><rect x="350" y="450" width="64" height="64" rx="12" fill="#dfe8f7" /><rect x="440" y="450" width="64" height="64" rx="12" fill="#dfe8f7" /><rect x="530" y="450" width="64" height="64" rx="12" fill="#12397a" /><rect x="620" y="450" width="64" height="64" rx="12" fill="#dfe8f7" /><text x="170" y="640" font-size="32" fill="#566174">el cliente firma</text></svg>
   </section>
 <!-- seo-tekst:start -->
-  <section id="opis">
-    <h2>Cómo funciona</h2>
-    <p>Un cerrajero que trabaja por avisos termina cada servicio con dos papeles: el parte de trabajo, con lo que se hizo y el material usado, y la factura para el cliente. Muchas veces el parte se escribe a mano en la furgoneta y la factura se hace por la noche, copiando los datos de un papel que ya no se lee bien.</p>
+  <section id="opis" class="split flip">
+    <div class="stack"><h2>Cómo funciona</h2></div>
+    <div class="stack">
+      <p>Un cerrajero que trabaja por avisos termina cada servicio con dos papeles: el parte de trabajo, con lo que se hizo y el material usado, y la factura para el cliente. Muchas veces el parte se escribe a mano en la furgoneta y la factura se hace por la noche, copiando los datos de un papel que ya no se lee bien.</p>
     <p>Así se pierde dinero y tiempo. Un cilindro o un bombín que no se apuntó no se cobra, una factura enviada días después se paga más tarde, y cuando un cliente reclama, nadie encuentra el parte firmado que demostraría lo que se hizo y a qué hora.</p>
     <p>El programa empieza por el aviso. Lo apuntas en el móvil con la dirección, el cliente y el tipo de servicio: apertura, cambio de cerradura, cambio de bombín, cerradura de seguridad, urgencia nocturna. Si el aviso llega por teléfono o por un portal, queda en la lista del día.</p>
     <p>A pie de puerta anotas el trabajo hecho, el tiempo, el material que usaste del catálogo de la furgoneta y un par de fotos del antes y el después. Al terminar, el cliente firma el parte en la pantalla del móvil, y el parte firmado se guarda con la fecha y la hora.</p>
@@ -114,31 +148,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <p>Si trabajas con otros cerrajeros, cada uno lleva sus avisos en su móvil y la oficina ve qué servicios están hechos, qué partes están firmados y qué facturas están pendientes de cobro.</p>
     <p>Empezar lleva una tarde: tus datos de autónomo o de empresa, tu catálogo de material con precios y los avisos de mañana. Funciona en el navegador y en el móvil, sin instalar nada.</p>
     <p>El programa está pensado para cerrajeros autónomos y pequeñas empresas de cerrajería en España. Está en preparación: primero comprobamos si los cerrajeros lo necesitan y solo después lo construimos. La empresa sigue siendo responsable de sus facturas y obligaciones fiscales.</p>
+    </div>
   </section>
   <section id="faq">
-    <h2>Preguntas frecuentes</h2>
-    <h3>¿Para quién es?</h3>
-    <p>Para cerrajeros autónomos y pequeñas empresas de cerrajería en España.</p>
-    <h3>¿El cliente puede firmar el parte?</h3>
-    <p>Sí, en la pantalla del móvil al terminar el servicio; el parte firmado queda guardado con fecha y hora.</p>
-    <h3>¿La factura sale del parte?</h3>
-    <p>Sí, con el material, la mano de obra, el desplazamiento y el IVA, sin volver a teclear nada.</p>
-    <h3>¿Hay que instalar algo?</h3>
-    <p>No, funciona en el navegador y en el móvil.</p>
-    <h3>¿Puedo usarlo ya?</h3>
-    <p>Todavía no. El programa está en preparación y comprobamos si los cerrajeros lo necesitan.</p>
+    <div class="stack"><h2>Preguntas frecuentes</h2></div>
+    <div class="rows">
+      <div class="split flip"><h3>¿Para quién es?</h3><p>Para cerrajeros autónomos y pequeñas empresas de cerrajería en España.</p></div>
+      <div class="split flip"><h3>¿El cliente puede firmar el parte?</h3><p>Sí, en la pantalla del móvil al terminar el servicio; el parte firmado queda guardado con fecha y hora.</p></div>
+      <div class="split flip"><h3>¿La factura sale del parte?</h3><p>Sí, con el material, la mano de obra, el desplazamiento y el IVA, sin volver a teclear nada.</p></div>
+      <div class="split flip"><h3>¿Hay que instalar algo?</h3><p>No, funciona en el navegador y en el móvil.</p></div>
+      <div class="split flip"><h3>¿Puedo usarlo ya?</h3><p>Todavía no. El programa está en preparación y comprobamos si los cerrajeros lo necesitan.</p></div>
+    </div>
   </section>
 <!-- seo-tekst:end -->
-  <section id="start" data-view="start_view">
-    <h2>Añade tu negocio</h2>
-    <p><label>Avisos al día<br><select data-ev-focus="form_start" style="margin-top:6px;padding:8px;font-size:16px"><option value="">— elige —</option><option>Hasta 3</option><option>4–8</option><option>9–20</option><option>Más de 20</option></select></label></p>
-    <a class="cta" href="price.html" data-ev="form_submit_click">Empezar</a>
+  <section id="start" data-view="start_view" class="split">
+    <div class="stack">
+      <h2>Añade tu negocio</h2>
+    </div>
+    <div class="tile stack">
+      <label>Avisos al día<select data-ev-focus="form_start"><option value="">— elige —</option><option>Hasta 3</option><option>4–8</option><option>9–20</option><option>Más de 20</option></select></label>
+      <a class="button" href="price.html" data-ev="form_submit_click">Empezar</a>
+    </div>
   </section>
-</div>
+</main>
 
-<footer><div class="wrap">
+<footer><div class="shell">
+  <p><b>Parte Cerrajero</b></p>
   <p><a href="privacy.html" data-ev="click_legal_privacy">Privacidad</a></p>
-  <p class="muted">Partes y facturas para tu negocio. La empresa sigue siendo responsable de sus facturas y obligaciones fiscales.</p>
+  <p>Partes y facturas para tu negocio. La empresa sigue siendo responsable de sus facturas y obligaciones fiscales.</p>
 </div></footer>
 
 </body>
